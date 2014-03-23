@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1'/>
+	<title>HP Puma RMU</title>
+	<!-- <link href="styles/HP_PUMA_RMU.css" rel="stylesheet"/> -->
+	<!-- <link rel="stylesheet" media="(max-width: 800px)" href="example.css" /> -->
+	<link rel="stylesheet" href="styles/master.css" />
+	<!-- link rel="stylesheet" id="orientCSS" href="styles/tablet_landscape.css" /-->
+	<!-- <link rel="stylesheet" media="(orientation: landscape)" href="styles/tablet_portrait.css" /> -->
+	<!-- <link rel="stylesheet" media="(orientation: portrait)" href="styles/tablet_portrait.css" /> -->
+	<link href="styles/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TimelineLite.min.js"></script> -->
+<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/easing/EasePack.min.js"></script> -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/plugins/CSSPlugin.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- // <script src="http://github.com/cowboy/jquery-postmessage/raw/master/jquery.ba-postmessage.min.js"></script> -->
+	<script src="scripts/spritespin.js"></script>	
+	<script src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="scripts/HP_PUMA_RMU.js"></script>
+</head>
+
+<body class="landscape">
+
+<div id="banner" class="collapsed">
+
+	<div id="printer1"><img src="img/printer1.png" /></div>
+
+	<div id="text1a">Simply print right<br>from this tablet.</div>
+	<div id="text1b">The new HP Color<br>LaserJet Pro MFP M476.<br>The MFP. Redefined by HP.</div>
+
+	<div class='btn' id='btnSeeHow'><div>See how</div></div>
+
+	<div id="logosMain" class="logosMainCollapsed">
+		<p>Make it matter.</p>
+		<img src='img/logoHP.png' />
+		<div></div>
+		<img src='img/partner_logo.png' />
+	</div>
+
+	<div id="logoFB"><a href="#"><img src="img/logoFB.png"/></a></div>
+	<div id="logoTW"><a href="#"><img src="img/logoTW.png"/></a></div>
+	<div id="logoLI"><a href="#"><img src="img/logoLI.png"/></a></div>
+
+	<div id="featureMain">
+		<p>Total connectivity. Total productivity.</p>
+		<p>The new HP Color LaserJet Pro MFP M476</p>
+		<p>Simply print from your mobile device and&nbsp;be&nbsp;more productive with the new HP&nbsp;Color&nbsp;LaserJet&nbsp;Pro&nbsp;MFP&nbsp;M476, the first mobile-enabled MFP built for small business. Working the way you want to, it matters.</p>
+	</div>
+
+	<div id="feature1">
+		<div><img src="img/iconMopria.png"/></div>
+		<!-- <div><img src="img/iconWireless.png"/></div> -->
+		<p>The world's first Mopria-enabled printer enables simple mobile printing from any  <span id="featurePop1" class="hotText">Mopria-enabled mobile device<sup>1</sup></span>.</p>
+		<!-- <p>Wireless Direct and NFC touch-to-print <span id="featurePop2" class="hotText">secured printing on the go<sup>2,3</sup></span>.</p> -->
+	</div>
+
+	<div id="feature2">
+		<div><img src="img/iconSend.png"/></div>
+		<div><img src="img/icon50.png"/></div>
+		<p>Scan directly to email, network folders, or the <span id="featurePop3" class="hotText">cloud<sup>4</sup></span>.</p>
+		<p>50-sheet ADF with automatic two-sided printing.</p>
+	</div>
+
+	<div id="feature3">
+		<div><img src="img/iconLDAP.png"/></div>
+		<div><img src="img/iconSimple.png"/></div>
+		<p>LDAP user authentication</p>
+		<p>Simple printer network management with HP Web Jetadmin.</p>
+	</div>
+
+	<div id="feature4">
+		<!-- <div><img src="img/iconBright.png"/></div> -->
+		<div><img src="img/iconWireless.png"/></div>
+		<div><img src="img/iconUSB.png"/></div>
+		<!-- <p>Bright 3.5&quot; touchscreen</p> -->		
+		<p>Wireless Direct and NFC touch-to-print <span id="featurePop2" class="hotText">secured printing on the go<sup>2,3</sup></span>.</p>
+		<p>Convenient walk-up USB printing and scanning.</p>
+	</div>
+
+	<div id="arrows">
+		<div><img src="img/arrows.png"/></div>
+		<p>Swipe to explore</p>
+	</div>
+
+	<div id="printerSpin"></div>
+	
+</div>
+
+<div id="overlay">
+	<div id="btnCollapse" class="btnClose"><p>X</p></div>
+
+	<div id="featuresDivider"></div>
+
+	<div class="blueDotBtn" id="blueDot1"><div><div id="blueDotCircle1"></div></div></div>
+	<div class="blueDotBtn" id="blueDot2"><div><div id="blueDotCircle2"></div></div></div>
+	<div class="blueDotBtn" id="blueDot3"><div><div id="blueDotCircle3"></div></div></div>
+	<div class="blueDotBtn" id="blueDot4"><div><div id="blueDotCircle4"></div></div></div>
+
+	<div class='btn' id='btnBuyNow'><div><a href="#">Buy now</a></div></div>
+
+	<div id="footnoteScrollBox">
+		<div id="btnCloseFootnote">
+			<div class="btnClose"><p>X</p></div>
+		</div>
+		<p id="footnoteScrollText" class="scroll-pane"></p>
+	</div>
+
+	<div id="replay">
+		<div><img src="img/replay.png"/></div>
+		<!-- <p>Replay</p> -->
+	</div>
+</div>
+
+</body>
+</html>

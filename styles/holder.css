@@ -1,0 +1,23 @@
+/*tablet_landscape.css*/
+
+body {
+	/*font-family:HPLight, Arial, sans-serif;*/
+	/*font-size:16px;*/	
+	background-color:#eeeeee;
+}
+
+#hp_puma {
+	position:absolute;
+	bottom:0;
+	width: 900px;
+	height: 106px;
+	padding: 0;
+	margin: 0;
+	overflow:hidden;
+	/*border-style:solid;*/
+	/*border-width:1px;*/
+	/*width:900px;*/
+	/*background-color:#eeeeee;*/
+  	/*background-image: linear-gradient(#fefefe, #dfdfdf);*/
+	/*background-image:url(../guide6.png);*/
+}
